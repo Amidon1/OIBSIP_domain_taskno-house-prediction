@@ -1,50 +1,81 @@
+🏠 House Price Prediction App
 
+This project is a machine learning web app that predicts the price of a house based on user inputs like area, number of bedrooms, bathrooms, parking, and other home features.
 
-🏡 House Price Prediction Using Machine Learning
+It was built using Python, trained on real housing data, and deployed with Streamlit to make it interactive and user-friendly.
 
-This project uses a machine learning model to predict the price of a house based on features like its size (area), number of bedrooms and bathrooms,guest room, parking space, and more. The model is built using Python and deployed with Streamlit for easy web-based access.
+🚀 Features
 
-📌 Objectives
-Use historical housing data to build a regression model.
+    Predict house prices based on 12 key features
 
-Train the model to predict house prices based on multiple input features.
+    Built with a machine learning regression model
 
-Build an interactive web app using Streamlit so users can input data and get predicted prices in real time.
+    Interactive web app using Streamlit
 
-🧠 What the Model Considers
-The model uses the following inputs to make predictions:
+    Clean and simple user interface
 
-Area (in square feet)
+    Easy to use for non-technical users
 
-Number of Bedrooms
+🛠️ Tools Used
 
-Number of Bathrooms
+    Python 🐍
 
-Number of Stories (Floors)
+    pandas & NumPy
 
-Main Road Access (yes/no)
+    scikit-learn (for model building)
 
-Guest Room (yes/no)
+    Streamlit (for frontend app)
 
-Basement (yes/no)
+    Jupyter Notebook (for model training & testing)
 
-Hot Water Heating (yes/no)
+📦 Project Files
 
-Air Conditioning (yes/no)
+    house.py – the main Streamlit app
 
-Parking Spaces
+    model.pkl – the trained machine learning model
 
-Preferred Area (yes/no)
+    dataset.csv – cleaned housing data used for training
 
-Furnishing Status (furnished / semi-furnished / unfurnished)
+    notebook.ipynb – model development and EDA
 
-⚙ Tools & Libraries
-Python
+💻 How to Run Locally
 
-Pandas, NumPy
+    Clone the repo
 
-Scikit-learn
+git clone https://github.com/Amidon1/OIBSIP_domain_taskno-house-prediction
 
-Joblib (for saving the model)
+    Install dependencies
 
-Streamlit (for building the web app).
+pip install -r requirements.txt
+
+    Run the app
+
+streamlit run house.py
+
+🔍 Input Features
+
+Here are the 12 features used in the prediction:
+
+    Area
+
+    Bedrooms
+
+    Bathrooms
+
+    Stories
+
+    Main Road (0 = No, 1 = Yes)
+
+    Guest Room (0 = No, 1 = Yes)
+
+    Basement (0 = No, 1 = Yes)
+
+    Hot Water Heating (0 = No, 1 = Yes)
+
+    Air Conditioning (0 = No, 1 = Yes)
+
+    Parking (numeric: e.g., 1, 2, 3)
+
+    Prefarea (0 = No, 1 = Yes)
+
+    Furnishing Status (0 = Unfurnished, 1 = Semi-Furnished or Fully-Furnished).
